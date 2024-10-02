@@ -67,7 +67,7 @@ export default function App() {
       await uploadData({
         path: ({ identityId }) => `media/${identityId}/${newItem.image}`,
         data: form.get("image"),
-      }).result;
+      }).result;  
 
     fetchItems();
     event.target.reset();
